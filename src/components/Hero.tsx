@@ -164,10 +164,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenStatus }) => {
                   <span className="font-semibold text-right text-[#1F2928]">Ossenkampweg 12, Zeewolde</span>
                 </div>
                 <div className="flex items-start justify-between gap-3">
-                  <span className="text-[#1F2928]/60">Kadastraal</span>
-                  <span className="font-medium text-right">Sectie A, nrs. 4532 & 4533</span>
-                </div>
-                <div className="flex items-start justify-between gap-3">
                   <span className="text-[#1F2928]/60">Oppervlakte</span>
                   <span className="font-medium text-right tabular-nums">ca. 43.189 m²</span>
                 </div>

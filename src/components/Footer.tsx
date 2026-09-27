@@ -49,7 +49,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact, onOpenStatus }) =
             <ul className="space-y-2 text-xs sm:text-sm text-[#E9E4D8]/80">
               <li>
                 <a href="#locatie" className="hover:text-[#63B9BB] transition-colors">
-                  Locatie & Kadaster Zeewolde
+                  Locatie Zeewolde
                 </a>
               </li>
               <li>
@@ -90,7 +90,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact, onOpenStatus }) =
             </ul>
           </div>
 
-          {/* Kadastrale & Technische Gegevens (Col 4) */}
+          {/* Locatie & Technische Gegevens (Col 4) */}
           <div className="lg:col-span-4 space-y-3">
             <div className="text-xs uppercase font-bold tracking-wider text-[#E9E4D8]/60">
               Locatiegegevens
@@ -103,10 +103,6 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact, onOpenStatus }) =
               <div className="flex justify-between">
                 <span className="text-[#E9E4D8]/50">Gemeente:</span>
                 <span>Zeewolde (Flevoland)</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-[#E9E4D8]/50">Kadaster:</span>
-                <span className="tabular-nums">Sectie A, nrs. 4532 & 4533</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-[#E9E4D8]/50">Projectomvang:</span>

@@ -24,17 +24,7 @@ export const LocationSection: React.FC<LocationSectionProps> = ({ onOpenContact 
         </div>
 
         {/* Spatial Key Metrics Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
-          <div className="bg-white rounded-xl p-5 border border-[#E9E4D8] shadow-xs">
-            <span className="text-xs uppercase tracking-wider text-[#1F2928]/50 font-semibold block mb-1">
-              Kadastrale aanduiding
-            </span>
-            <div className="text-lg sm:text-xl font-bold text-[#1F2928] font-display">
-              Sectie A · 4532 & 4533
-            </div>
-            <span className="text-xs text-[#509799] mt-1 block">Gemeente Zeewolde</span>
-          </div>
-
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
           <div className="bg-white rounded-xl p-5 border border-[#E9E4D8] shadow-xs">
             <span className="text-xs uppercase tracking-wider text-[#1F2928]/50 font-semibold block mb-1">
               Projectgebied
@@ -90,7 +80,7 @@ export const LocationSection: React.FC<LocationSectionProps> = ({ onOpenContact 
           </div>
 
           <div className="flex flex-wrap items-center justify-between gap-2 px-3 pt-3 text-xs text-[#1F2928]/70">
-            <span>Locatie: Ossenkampweg 12, Zeewolde (Kadastraal Sectie A, 4532 & 4533)</span>
+            <span>Locatie: Ossenkampweg 12, Zeewolde</span>
             <span className="italic">Indicatief ontwikkelperspectief en ruimtelijke inpassing</span>
           </div>
         </div>

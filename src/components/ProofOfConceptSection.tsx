@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Microscope, TrendingUp, Lightbulb } from 'lucide-react';
+import { Shield, Microscope, TrendingUp, Lightbulb, Quote } from 'lucide-react';
 
 export const ProofOfConceptSection: React.FC = () => {
   const steps = [
@@ -101,6 +101,43 @@ export const ProofOfConceptSection: React.FC = () => {
           <p className="text-sm font-medium text-[#1F2928]/85 max-w-3xl mx-auto">
             “De locatie pretendeert niet hét voorbeeld voor heel Nederland te worden. De locatie kan echter wel concrete kennis opleveren die ook voor andere Flevolandse en nationale gebiedsontwikkelingen relevant is.”
           </p>
+        </div>
+
+        {/* Catchy Quote Card with Onderzoeksgebied Image Background */}
+        <div className="mt-6 relative rounded-2xl overflow-hidden border border-[#E9E4D8] shadow-md group">
+          {/* Background Image of Onderzoeksgebied with Architectural Overlay */}
+          <div className="absolute inset-0 pointer-events-none">
+            <img
+              src="https://www.image2url.com/r2/default/images/1790499181214-5874466b-bc9e-4b3b-9efc-ff25fb7cc61c.png"
+              alt="Onderzoeksgebied Ossenkampweg 12 Zeewolde"
+              className="w-full h-full object-cover object-center filter saturate-[0.85] contrast-[1.05] group-hover:scale-[1.02] transition-transform duration-700"
+            />
+            {/* Deep rich translucent overlay for optimal contrast and readability */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#17201F]/95 via-[#1F2928]/92 to-[#17201F]/95 backdrop-blur-[1.5px]" />
+            <div className="absolute inset-0 bg-[#509799]/15 mix-blend-overlay" />
+          </div>
+
+          {/* Content */}
+          <div className="relative z-10 p-6 sm:p-8 md:p-9 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <div className="max-w-3xl">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-[#63B9BB] text-[11px] uppercase tracking-wider font-bold mb-3 backdrop-blur-xs">
+                <Quote className="w-3.5 h-3.5 text-[#63B9BB]" />
+                <span>Toekomstperspectief 2030–2040 · Energie Eco-keten</span>
+              </div>
+              <blockquote className="text-base sm:text-lg md:text-xl font-medium text-white leading-relaxed tracking-tight">
+                “Rond 2030-2040 kan het zelfs als een energie eco-keten fungeren als long-duration-storage (LDES) : batterijen vooral kortcyclisch balanceren, zorgt H2-productie en -opslag voor meerdaagse of seizoensbuffering.”
+              </blockquote>
+            </div>
+
+            <div className="flex md:flex-col items-center md:items-end gap-2 shrink-0">
+              <span className="px-3.5 py-1.5 rounded-lg bg-[#509799]/30 border border-[#63B9BB]/40 text-[#63B9BB] text-xs font-bold whitespace-nowrap">
+                LDES & Seizoensbuffering
+              </span>
+              <span className="text-[11px] text-[#E9E4D8]/60">
+                Onderzoeksgebied Ossenkampweg 12
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
