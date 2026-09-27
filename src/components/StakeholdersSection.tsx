@@ -7,8 +7,6 @@ import {
   Zap,
   Leaf,
   MessageSquare,
-  ArrowUpRight,
-  ShieldCheck,
   Compass
 } from 'lucide-react';
 
@@ -208,31 +206,6 @@ export const StakeholdersSection: React.FC<StakeholdersSectionProps> = ({ onOpen
               );
             })}
           </div>
-        </div>
-
-        {/* Bottom Banner with Notice */}
-        <div className="bg-white rounded-2xl border border-[#E9E4D8] p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-lg bg-[#557A64]/15 text-[#557A64] flex items-center justify-center shrink-0">
-              <ShieldCheck className="w-5 h-5" />
-            </div>
-            <div>
-              <div className="text-sm font-bold text-[#1F2928]">
-                Transparant proces & open verkenning
-              </div>
-              <div className="text-xs text-[#1F2928]/70">
-                Het initiatief bevindt zich in de fase van perspectiefvorming en agendering. Er is nog geen sprake van besluitvorming of vergunningaanvraag.
-              </div>
-            </div>
-          </div>
-
-          <button
-            onClick={onOpenContact}
-            className="inline-flex items-center gap-2 text-xs font-semibold px-4 py-2.5 rounded-xl border border-[#1F2928] text-[#1F2928] hover:bg-[#1F2928] hover:text-white transition-colors cursor-pointer shrink-0"
-          >
-            <span>Neem contact op voor toelichting</span>
-            <ArrowUpRight className="w-3.5 h-3.5" />
-          </button>
         </div>
       </div>
     </section>

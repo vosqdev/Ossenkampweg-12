@@ -50,14 +50,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenStatus }) => {
           {/* Flevoland cadastral grid background */}
           <rect width="1440" height="900" fill="url(#cadastralGrid)" />
 
-          {/* Diagonal Polder Canals and Parcel Axes */}
-          <line x1="-100" y1="480" x2="1540" y2="280" stroke="#557A64" strokeWidth="1.2" strokeOpacity="0.25" />
-          <line x1="180" y1="920" x2="1100" y2="-50" stroke="#509799" strokeWidth="1.5" strokeOpacity="0.3" strokeDasharray="8 8" />
-          <line x1="620" y1="920" x2="1500" y2="120" stroke="#E9E4D8" strokeWidth="1.8" />
+          {/* Diagonal Polder Canals and Parcel Axes meeting at the corner */}
+          <line x1="-100" y1="480" x2="1540" y2="280" stroke="#557A64" strokeWidth="1.2" strokeOpacity="0.2" />
+          <line x1="760" y1="188" x2="245" y2="708" stroke="#509799" strokeWidth="1.2" strokeOpacity="0.3" strokeDasharray="6 6" />
+          <line x1="760" y1="188" x2="1285" y2="713" stroke="#509799" strokeWidth="1.2" strokeOpacity="0.3" strokeDasharray="6 6" />
+          <line x1="180" y1="920" x2="1100" y2="-50" stroke="#509799" strokeWidth="1.2" strokeOpacity="0.2" strokeDasharray="8 8" />
 
-          {/* Animated Energy Transmission Line */}
+          {/* Animated Energy Transmission Line routed via the energy node */}
           <path
-            d="M 120,720 C 360,680 520,540 760,490 S 1120,380 1380,240"
+            d="M 120,680 C 320,520 540,280 760,188 S 1120,240 1380,270"
             stroke="url(#energyGrad)"
             strokeWidth="2.5"
             fill="none"
@@ -65,7 +66,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenStatus }) => {
           />
 
           <path
-            d="M 80,320 C 340,360 640,430 880,470 S 1220,560 1420,620"
+            d="M 80,300 C 320,260 560,200 760,188 S 1180,380 1420,540"
             stroke="#63B9BB"
             strokeWidth="1.8"
             strokeOpacity="0.4"
@@ -73,10 +74,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenStatus }) => {
             className="animate-energy-flow-reverse"
           />
 
-          {/* Geometric focal nodes representing parcel & turbine point */}
-          <circle cx="760" cy="490" r="14" fill="#63B9BB" fillOpacity="0.2" className="animate-pulse-glow" />
-          <circle cx="760" cy="490" r="6" fill="#509799" />
-          <circle cx="760" cy="490" r="32" stroke="#509799" strokeWidth="1" strokeDasharray="3 3" strokeOpacity="0.5" />
+          {/* Geometric focal node (Energie Knooppunt) placed at the apex of the perpendicular lines */}
+          <circle cx="760" cy="188" r="16" fill="#63B9BB" fillOpacity="0.25" className="animate-pulse-glow" />
+          <circle cx="760" cy="188" r="7" fill="#509799" />
+          <circle cx="760" cy="188" r="34" stroke="#509799" strokeWidth="1.2" strokeDasharray="3 3" strokeOpacity="0.55" />
+          <circle cx="760" cy="188" r="50" stroke="#63B9BB" strokeWidth="0.8" strokeDasharray="5 5" strokeOpacity="0.25" />
 
           {/* Zeewolde North vector indicator */}
           <circle cx="1120" cy="380" r="5" fill="#D97706" fillOpacity="0.8" />
