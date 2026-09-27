@@ -1,0 +1,6 @@
+{
+  "name": "Ossenkampweg 12 Zeewolde — Netbewuste Gebiedsontwikkeling",
+  "description": "Ontwikkelperspectief en onderzoeksrichting voor een mogelijke proeftuin voor netbewuste gebiedsontwikkeling en energieplanologie in Zeewolde.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
