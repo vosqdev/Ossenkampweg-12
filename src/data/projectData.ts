@@ -275,7 +275,8 @@ export const STATUS_STEPS: StatusStep[] = [
     title: 'Perspectief en agendering',
     statusText: 'In ontwikkeling / overleg',
     state: 'in_progress',
-    explanation: 'Actieve fase waarin het ontwikkelperspectief wordt gedeeld met belanghebbenden om te toetsen of er animo en gezamenlijke interesse is voor een ontwerpend onderzoek.'
+    explanation:
+      'Actieve fase waarin het ontwikkelperspectief sinds begin 2026 is gedeeld met zowel de ambtelijke als bestuurlijke lagen binnen de Gemeente en Provincie, (in)direct ook als belanghebbenden. Waarvan sinds april 2026 aanvraag voor tijdelijke ontheffing voor ontwerpend onderzoek.'
   },
   {
     step: 3,

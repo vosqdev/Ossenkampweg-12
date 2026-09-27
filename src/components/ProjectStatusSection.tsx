@@ -25,10 +25,10 @@ export const ProjectStatusSection: React.FC = () => {
           <ShieldAlert className="w-6 h-6 text-[#99336F] shrink-0 mt-0.5" />
           <div>
             <h3 className="text-base font-bold text-[#1F2928]">
-              Formele Toelichting op de Status
+              Formele Toelichting & Project Status
             </h3>
             <p className="text-xs sm:text-sm text-[#1F2928]/80 mt-1 leading-relaxed">
-              De gemeente Zeewolde, provincie Flevoland en netbeheerder Liander hebben <strong>geen definitief besluit</strong> genomen over dit initiatief. Deze website toont uitsluitend een ontwikkelperspectief om gezamenlijk te bepalen of ontwerpend onderzoek naar het behoud van de bestaande energiepositie wenselijk en haalbaar is.
+              De gemeente Zeewolde, provincie Flevoland en netbeheerder Liander hebben <strong>geen definitief besluit</strong> genomen over dit initiatief. Het ontwikkelperspectief is sinds begin 2026 gedeeld met zowel ambtelijke als bestuurlijke lagen en belanghebbenden; sinds april 2026 loopt er een aanvraag voor een tijdelijke ontheffing ten behoeve van ontwerpend onderzoek.
             </p>
           </div>
         </div>
@@ -102,7 +102,7 @@ export const ProjectStatusSection: React.FC = () => {
 
                   <div className="mt-5 pt-3 border-t border-[#E9E4D8]/60 text-[11px] text-[#1F2928]/50">
                     {isInProgress
-                      ? 'Actief in agendering met belanghebbenden'
+                      ? 'In overleg met Gemeente & Provincie'
                       : isCompleted
                       ? 'Inhoudelijke basis gelegd'
                       : 'Geen formele toezegging'}

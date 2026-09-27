@@ -145,7 +145,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenStatus }) => {
                 onClick={onOpenStatus}
                 className="px-4 py-3.5 text-xs sm:text-sm font-medium text-[#1F2928]/80 hover:text-[#509799] underline underline-offset-4 cursor-pointer"
               >
-                Bekijk formele status (geen vergunning)
+                Bekijk formele toelichting & projectstatus
               </button>
             </div>
           </div>

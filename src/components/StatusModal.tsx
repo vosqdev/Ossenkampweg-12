@@ -30,13 +30,13 @@ export const StatusModal: React.FC<StatusModalProps> = ({ isOpen, onClose }) => 
         <div className="pr-10">
           <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#99336F]/10 text-[#99336F] text-xs font-bold uppercase tracking-wider mb-2">
             <ShieldAlert className="w-3.5 h-3.5" />
-            <span>Formele Toelichting & Bestuurlijke Status</span>
+            <span>Formele Toelichting & Project Status</span>
           </div>
           <h3 className="text-2xl font-extrabold text-[#1F2928] tracking-tight">
             Waar staat het initiatief nu?
           </h3>
           <p className="mt-2 text-sm text-[#1F2928]/75 leading-relaxed">
-            De website mag niet de indruk wekken dat sprake is van een reeds vergund, definitief of bestuurlijk goedgekeurd project. Het betreft een ontwikkelperspectief en onderzoeksrichting.
+            De website mag niet de indruk wekken dat sprake is van een reeds vergund, definitief of bestuurlijk goedgekeurd project. Het betreft een ontwikkelperspectief dat sinds begin 2026 actief is gedeeld met Gemeente en Provincie (ambtelijk en bestuurlijk), waarbij sinds april 2026 een aanvraag loopt voor een tijdelijke ontheffing ten behoeve van ontwerpend onderzoek.
           </p>
         </div>
 
@@ -102,7 +102,7 @@ export const StatusModal: React.FC<StatusModalProps> = ({ isOpen, onClose }) => 
 
         {/* Clear Safeguard Statement */}
         <div className="mt-6 p-4 rounded-xl bg-[#F4F1EB] border border-[#E9E4D8] text-xs text-[#1F2928]/80 leading-relaxed">
-          <strong className="text-[#1F2928]">Kernboodschap:</strong> Het onderzoek bevindt zich in fase 2 (perspectief en agendering). Er is géén besluit genomen over realisatie en géén vergunning verleend.
+          <strong className="text-[#1F2928]">Kernboodschap:</strong> Het onderzoek bevindt zich in fase 2 (perspectief en agendering / overleg). Er loopt een aanvraag voor een tijdelijke ontheffing ten behoeve van ontwerpend onderzoek. Er is géén besluit genomen over definitieve realisatie.
         </div>
 
         <div className="mt-6 flex justify-end">

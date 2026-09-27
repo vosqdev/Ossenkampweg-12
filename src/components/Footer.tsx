@@ -118,7 +118,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact, onOpenStatus }) =
               onClick={onOpenStatus}
               className="w-full text-center py-2 px-3 rounded-lg bg-white/5 hover:bg-white/10 text-xs font-medium text-[#63B9BB] border border-white/10 transition-colors cursor-pointer"
             >
-              Huidige formele status bekijken →
+              Formele toelichting & projectstatus bekijken →
             </button>
           </div>
         </div>
