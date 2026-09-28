@@ -36,7 +36,7 @@ export const ProofOfConceptSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-white border-t border-[#E9E4D8]/80">
+    <section id="proeftuin" className="py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-white border-t border-[#E9E4D8]/80">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="max-w-3xl mb-12">

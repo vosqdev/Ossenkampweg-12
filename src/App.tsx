@@ -8,6 +8,7 @@ import { ProofOfConceptSection } from './components/ProofOfConceptSection';
 import { StakeholdersSection } from './components/StakeholdersSection';
 import { ProjectStatusSection } from './components/ProjectStatusSection';
 import { FuturePerspective } from './components/FuturePerspective';
+import { NewsSection } from './components/NewsSection';
 import { FaqSection } from './components/FaqSection';
 import { Footer } from './components/Footer';
 import { StatusModal } from './components/StatusModal';
@@ -42,17 +43,20 @@ export default function App() {
         {/* 5. Ontwikkelperspectief / Tijdlijn (2025–2035+) */}
         <TimelineSection />
 
-        {/* 6. De Locatie als Proeftuin (Behouden, Onderzoeken, Opschalen) */}
+        {/* 6. Toekomstperspectief & Simulatie (Van energielocatie naar energiesysteem) */}
+        <FuturePerspective />
+
+        {/* 7. De Locatie als Proeftuin (Proof of Concept: Behouden, Onderzoeken, Opschalen) */}
         <ProofOfConceptSection />
 
-        {/* 7. Samenwerking (Netwerk rond Ossenkampweg 12) */}
+        {/* 8. Actuele Fotoreportage Sanering Windmolen (5 Stappen) */}
+        <NewsSection onOpenContact={handleOpenContact} />
+
+        {/* 9. Samenwerking (Netwerk rond Ossenkampweg 12) */}
         <StakeholdersSection onOpenContact={handleOpenContact} />
 
-        {/* 8. Waar staat het initiatief nu? (6 Stappen & Transparantie) */}
+        {/* 9. Waar staat het initiatief nu? (6 Stappen & Transparantie) */}
         <ProjectStatusSection />
-
-        {/* 9. Toekomstperspectief (Visuele Simulatie & Scenario's) */}
-        <FuturePerspective />
 
         {/* 10. Veelgestelde Vragen (FAQ - 12 Vragen) */}
         <FaqSection />

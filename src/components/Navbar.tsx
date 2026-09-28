@@ -21,9 +21,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenStatus }) => {
     { label: 'Locatie', href: '#locatie' },
     { label: 'Netbewust', href: '#waarom-netbewust' },
     { label: 'Perspectief', href: '#planning' },
-    { label: 'Proeftuin', href: '#proeftuin' },
-    { label: 'Samenwerking', href: '#samenwerking' },
     { label: 'Energiesysteem', href: '#toekomst' },
+    { label: 'Proeftuin', href: '#proeftuin' },
+    { label: 'Sanering', href: '#nieuws' },
+    { label: 'Samenwerking', href: '#samenwerking' },
     { label: 'FAQ', href: '#faq' },
   ];
 

@@ -89,7 +89,7 @@ export const FuturePerspective: React.FC = () => {
             “Niet één installatie, maar een mogelijke bouwsteen voor de ontwikkeling van Zeewolde van morgen.”
           </p>
           <p className="mt-4 text-sm sm:text-base text-[#E9E4D8]/80 leading-relaxed">
-            De lokale energiehub fungeert als intelligente schakel in een dynamisch ecosysteem. Bekijk hieronder hoe energie in verschillende weers- en gebruiksscenario’s lokaal circuleert.
+            De lokale energiehub als intelligente schakel in een dynamisch ecosysteem. Bekijk hieronder hoe energie in verschillende weers- en gebruiksscenario’s lokaal circuleert.
           </p>
         </div>
 
