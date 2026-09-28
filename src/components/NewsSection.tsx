@@ -63,11 +63,11 @@ export const NewsSection: React.FC<NewsSectionProps> = ({ onOpenContact }) => {
             {article.summary}
           </p>
 
-          {/* Stock photo placeholder notification */}
-          <div className="mt-5 inline-flex items-start gap-2.5 px-3.5 py-2.5 rounded-xl bg-amber-500/10 border border-amber-500/25 text-xs text-amber-900 leading-relaxed">
-            <Info className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
+          {/* Authentic photo reportage confirmation */}
+          <div className="mt-5 inline-flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/25 text-xs text-emerald-900 leading-relaxed">
+            <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0" />
             <span>
-              <strong>Foto-update:</strong> Foto 1, 2 en 3 tonen de daadwerkelijke situatie en saneringswerkzaamheden aan Ossenkampweg 12. De afrondende stappen (foto 4 en 5) worden momenteel stapsgewijs aangevuld met de officiële projectfoto's.
+              <strong>Authentiek beeldverslag:</strong> Alle 5 foto's tonen de daadwerkelijke situatie en ontmantelingsstappen aan de Ossenkampweg 12 in Zeewolde.
             </span>
           </div>
         </div>
@@ -109,32 +109,44 @@ export const NewsSection: React.FC<NewsSectionProps> = ({ onOpenContact }) => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
             {/* Left: Large Photo Display with Controls */}
             <div className="lg:col-span-8 flex flex-col justify-between">
-              <div className="relative rounded-2xl overflow-hidden bg-[#1F2928] aspect-16/10 sm:aspect-16/9 group">
+              <div className="relative rounded-2xl overflow-hidden bg-[#141C1B] h-[460px] sm:h-[520px] lg:h-[560px] group flex items-center justify-center border border-[#1F2928]/20 shadow-md">
+                {/* Ambient soft background glow of the photo to fill non-matching aspect ratios seamlessly */}
+                <div
+                  className="absolute inset-0 bg-cover bg-center filter blur-2xl scale-115 opacity-30 pointer-events-none transition-all duration-700"
+                  style={{ backgroundImage: `url(${currentPhoto.imageUrl})` }}
+                  aria-hidden="true"
+                />
+                <div className="absolute inset-0 bg-black/25 pointer-events-none" aria-hidden="true" />
+
+                {/* Full uncropped image - completely zoomed out so the full wind turbine from blade tip to mast is visible */}
                 <img
                   src={currentPhoto.imageUrl}
                   alt={currentPhoto.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-102"
+                  className="relative z-10 max-h-full max-w-full w-auto h-auto object-contain transition-transform duration-500 group-hover:scale-[1.01]"
                 />
 
                 {/* Top overlay badge */}
-                <div className="absolute top-4 left-4 flex flex-wrap items-center gap-2">
-                  <span className="px-3 py-1 rounded-md bg-[#1F2928]/80 backdrop-blur-md text-white text-xs font-semibold shadow-xs">
+                <div className="absolute top-4 left-4 z-20 flex flex-wrap items-center gap-2">
+                  <span className="px-3 py-1 rounded-md bg-[#1F2928]/85 backdrop-blur-md text-white text-xs font-semibold shadow-xs border border-white/10">
                     {currentPhoto.phaseLabel}
                   </span>
-                  <span className="px-2.5 py-1 rounded-md bg-white/90 backdrop-blur-md text-[#1F2928] text-[11px] font-bold shadow-xs">
+                  <span className="px-2.5 py-1 rounded-md bg-white/95 backdrop-blur-md text-[#1F2928] text-[11px] font-bold shadow-xs">
                     {currentPhoto.badge}
                   </span>
                 </div>
 
                 {/* Top Right: Lightbox Expand button */}
-                <button
-                  onClick={() => setIsLightboxOpen(true)}
-                  className="absolute top-4 right-4 p-2 rounded-lg bg-black/50 hover:bg-black/80 text-white backdrop-blur-md transition-colors cursor-pointer"
-                  title="Vergroot weergave"
-                  aria-label="Vergroot weergave"
-                >
-                  <Maximize2 className="w-4 h-4" />
-                </button>
+                <div className="absolute top-4 right-4 z-20 flex items-center gap-2">
+                  <button
+                    onClick={() => setIsLightboxOpen(true)}
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-black/60 hover:bg-black/85 text-white text-xs font-medium backdrop-blur-md transition-all cursor-pointer border border-white/10 shadow-xs"
+                    title="Open in volledig scherm"
+                    aria-label="Vergroot weergave"
+                  >
+                    <Maximize2 className="w-3.5 h-3.5" />
+                    <span className="hidden sm:inline">Volledig scherm</span>
+                  </button>
+                </div>
 
                 {/* Bottom navigation buttons */}
                 <div className="absolute inset-y-0 left-0 flex items-center p-2 opacity-80 group-hover:opacity-100 transition-opacity">
@@ -244,13 +256,17 @@ export const NewsSection: React.FC<NewsSectionProps> = ({ onOpenContact }) => {
                         : 'bg-[#F7F8F6] border-[#E9E4D8] hover:border-[#509799]/40 opacity-80 hover:opacity-100'
                     }`}
                   >
-                    <div className="aspect-16/10 rounded-lg overflow-hidden bg-[#1F2928] mb-2 relative">
+                    <div className="aspect-[4/3] rounded-lg overflow-hidden bg-[#141C1B] mb-2 relative flex items-center justify-center">
+                      <div
+                        className="absolute inset-0 bg-cover bg-center filter blur-xs opacity-35"
+                        style={{ backgroundImage: `url(${photo.imageUrl})` }}
+                      />
                       <img
                         src={photo.imageUrl}
                         alt={photo.title}
-                        className="w-full h-full object-cover"
+                        className="relative z-1 max-h-full max-w-full w-auto h-auto object-contain"
                       />
-                      <span className="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-black/70 text-white text-[10px] font-mono font-bold">
+                      <span className="absolute bottom-1 right-1 z-2 px-1.5 py-0.5 rounded bg-black/75 text-white text-[10px] font-mono font-bold">
                         #{photo.id}
                       </span>
                     </div>
