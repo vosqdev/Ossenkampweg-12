@@ -10,7 +10,6 @@ import {
   Calendar,
   Layers,
   Sparkles,
-  Info,
   CheckCircle2
 } from 'lucide-react';
 
@@ -62,14 +61,6 @@ export const NewsSection: React.FC<NewsSectionProps> = ({ onOpenContact }) => {
           <p className="mt-4 text-base sm:text-lg text-[#1F2928]/75 leading-relaxed">
             {article.summary}
           </p>
-
-          {/* Authentic photo reportage confirmation */}
-          <div className="mt-5 inline-flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/25 text-xs text-emerald-900 leading-relaxed">
-            <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0" />
-            <span>
-              <strong>Authentiek beeldverslag:</strong> Alle 5 foto's tonen de daadwerkelijke situatie en ontmantelingsstappen aan de Ossenkampweg 12 in Zeewolde.
-            </span>
-          </div>
         </div>
 
         {/* Interactive Photo Reportage Showcase */}
