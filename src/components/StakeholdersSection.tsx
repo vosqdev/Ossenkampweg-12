@@ -7,15 +7,33 @@ import {
   Zap,
   Leaf,
   MessageSquare,
-  Compass
+  Compass,
+  FileText,
+  ExternalLink
 } from 'lucide-react';
+
+interface StakeholderGroup {
+  id: string;
+  icon: React.ComponentType<{ className?: string }>;
+  badge: string;
+  title: string;
+  color: string;
+  description: string;
+  policyNote?: string;
+  link?: {
+    label: string;
+    url: string;
+    badge?: string;
+  };
+  focalPoints: string[];
+}
 
 interface StakeholdersSectionProps {
   onOpenContact: () => void;
 }
 
 export const StakeholdersSection: React.FC<StakeholdersSectionProps> = ({ onOpenContact }) => {
-  const stakeholderGroups = [
+  const stakeholderGroups: StakeholderGroup[] = [
     {
       id: 'overheid',
       icon: Landmark,
@@ -24,7 +42,18 @@ export const StakeholdersSection: React.FC<StakeholdersSectionProps> = ({ onOpen
       color: '#509799',
       description:
         'Gemeenten, provincies en landelijke instanties bepalen het afwegingskader beleid en verstrekken vergunningen.',
-      focalPoints: ['Afwegingskaders & visievorming', 'Ruimtelijke ordening', 'Vergunningverlening'],
+      policyNote:
+        'Voor nieuwbouwontwikkelingen zoekt de gemeente naar innovatieve mogelijkheden en slimme oplossingen om toch te kunnen bouwen. Dit past geheel in lijn ook met de voorbereidingen voor ontwikkeling van het A-gebied (Fortenveld en Vestingveld) en zorgen voor een definitieve uitwerking en vaststelling van het Omgevingsprogramma voor het A-gebied.',
+      link: {
+        label: 'Bestuursakkoord (Coalitieakkoord 2026 - 2030)',
+        url: 'https://www.zeewolde.nl/fileadmin/Site_Zeewolde/documenten/college_b_en_w/Coalitieakkoord_2026_-_2030.pdf',
+        badge: 'Gemeente Zeewolde · PDF',
+      },
+      focalPoints: [
+        'Afwegingskaders & visievorming',
+        'Ontwikkeling A-gebied (Fortenveld & Vestingveld)',
+        'Omgevingsprogramma & vergunningen'
+      ],
     },
     {
       id: 'waterschappen',
@@ -187,6 +216,34 @@ export const StakeholdersSection: React.FC<StakeholdersSectionProps> = ({ onOpen
                       <p className="text-xs sm:text-sm text-[#1F2928]/85 leading-relaxed font-normal">
                         {group.description}
                       </p>
+
+                      {/* Policy & Context Note with Bestuursakkoord Link */}
+                      {group.policyNote && (
+                        <div className="mt-3 p-3.5 rounded-xl bg-[#509799]/8 border border-[#509799]/25 text-[#1F2928] text-xs sm:text-sm leading-relaxed">
+                          <p className="text-[#1F2928]/90 font-medium">
+                            {group.policyNote}
+                          </p>
+                          {group.link && (
+                            <div className="mt-3 pt-2.5 border-t border-[#509799]/20 flex flex-wrap items-center justify-between gap-2">
+                              <a
+                                href={group.link.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-1.5 text-xs font-bold text-[#509799] hover:text-[#1F2928] underline underline-offset-4 transition-colors cursor-pointer group/link"
+                              >
+                                <FileText className="w-3.5 h-3.5 text-[#509799]" />
+                                <span>{group.link.label}</span>
+                                <ExternalLink className="w-3 h-3 text-[#509799]/70 group-hover/link:translate-x-0.5 transition-transform" />
+                              </a>
+                              {group.link.badge && (
+                                <span className="text-[10px] font-mono font-medium text-[#1F2928]/60 bg-white/80 px-2 py-0.5 rounded border border-[#E9E4D8]">
+                                  {group.link.badge}
+                                </span>
+                              )}
+                            </div>
+                          )}
+                        </div>
+                      )}
 
                       {/* Focal points tags */}
                       <div className="mt-3 flex flex-wrap gap-1.5 pt-2 border-t border-[#E9E4D8]/60">
