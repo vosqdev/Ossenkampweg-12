@@ -31,30 +31,6 @@ export const SANERING_TIMELINE_EVENTS: SaneringMilestone[] = [
     note: 'Startpunt van het initiatief voor behoud van maatschappelijke waarde.'
   },
   {
-    id: 'perspectief-juli-2025',
-    date: 'Juli 2025',
-    year: '2025',
-    monthOrder: 7,
-    title: 'Perspectief- en agenderingsdocument',
-    category: 'visie',
-    categoryLabel: 'Documentatie & Agendering',
-    badge: 'Strategisch Document',
-    description: 'Vastlegging van het ruimtelijke, maatschappelijke en energetische perspectief. Formulering van de agendering rondom netcongestie, energie-eilanden en kansen voor Zeewolde-Noord.',
-    note: 'Inhoudelijke onderbouwing voor bestuurlijke dialogen.'
-  },
-  {
-    id: 'energie-eilanden-juli-2025',
-    date: 'Juli 2025',
-    year: '2025',
-    monthOrder: 7.1,
-    title: 'Presentatie Energie Eilanden aanpak provincie',
-    category: 'provincie',
-    categoryLabel: 'Provinciaal Overleg',
-    badge: 'Eerste Presentatie',
-    description: 'Eerste presentatie aan gedeputeerde en beleidsmakers van Provincie Flevoland over de Energie Eilanden-aanpak: decentrale balancering, batterijopslag en slimme netinpassing.',
-    note: 'Verbinding met provinciaal energiebeleid en netwerkdruk.'
-  },
-  {
     id: 'maatwerk-nov-2025',
     date: 'November 2025',
     year: '2025',
@@ -132,10 +108,34 @@ export const SANERING_TIMELINE_EVENTS: SaneringMilestone[] = [
     note: 'Draagvlakvergroting op provinciaal strategisch niveau.'
   },
   {
+    id: 'perspectief-juli-2026',
+    date: 'Juli 2026',
+    year: '2026',
+    monthOrder: 19.1,
+    title: 'Perspectief- en agenderingsdocument',
+    category: 'visie',
+    categoryLabel: 'Documentatie & Agendering',
+    badge: 'Strategisch Document',
+    description: 'Vastlegging van het ruimtelijke, maatschappelijke en energetische perspectief. Formulering van de agendering rondom netcongestie, energie-eilanden en kansen voor Zeewolde-Noord.',
+    note: 'Inhoudelijke onderbouwing voor bestuurlijke dialogen.'
+  },
+  {
+    id: 'energie-eilanden-juli-2026',
+    date: 'Juli 2026',
+    year: '2026',
+    monthOrder: 19.2,
+    title: 'Presentatie Energie Eilanden aanpak',
+    category: 'provincie',
+    categoryLabel: 'Provinciaal Overleg',
+    badge: 'Presentatie Provincie',
+    description: 'Inhoudelijke presentatie aan Provincie Flevoland over de Energie Eilanden-aanpak: decentrale balancering, batterijopslag en slimme netinpassing.',
+    note: 'Verbinding met provinciaal energiebeleid en netwerkdruk.'
+  },
+  {
     id: 'overleg-provincie-juli-2026',
     date: 'Juli 2026',
     year: '2026',
-    monthOrder: 19,
+    monthOrder: 19.3,
     title: 'Overleg provincie Flevoland over planinitiatief',
     category: 'provincie',
     categoryLabel: 'Bestuurlijk Overleg',
@@ -166,8 +166,8 @@ export const SANERING_TIMELINE_EVENTS: SaneringMilestone[] = [
     categoryLabel: 'Realisatie & Uitvoering',
     badge: 'Sloop Bovenbouw',
     highlight: true,
-    description: 'Fysieke ontmanteling van de solitaire windturbine: wieken, gondel (nacelle) en stalen mastdelen worden met zwaar kraanmaterieel deskundig gedemonteerd en circulair afgevoerd conform afspraak.',
-    note: 'Bovengrondse landschappelijke rust hersteld; terrein gereed voor vervolg.'
+    description: 'Fysieke ontmanteling van de solitaire windturbine: wieken, gondel (nacelle) en stalen mastdelen worden deskundig gedemonteerd en afgevoerd conform afspraak.',
+    note: 'Bovengronds vrij; terrein gereed voor vervolg.'
   },
   {
     id: 'behoud-netaansluiting-okt-2026',
@@ -179,8 +179,8 @@ export const SANERING_TIMELINE_EVENTS: SaneringMilestone[] = [
     categoryLabel: 'Infrastructuur Behoud',
     badge: 'Proeftuin Status',
     highlight: true,
-    description: 'De solitaire turbine is verdwenen; de robuuste 10kV netaansluiting (inclusief transformatorstation) en de zware ondergrondse betonfundering blijven zorgvuldig geconserveerd voor de proeftuinfase.',
-    note: 'Kostbaar maatschappelijk kapitaal gered van destructieve sloop.'
+    description: 'De solitaire turbine is verdwenen; de 10kV netaansluiting (inclusief transformatorstation) en de ondergrondse betonfundering blijven nog tot 1 december 2026 geconserveerd voor de proeftuinfase, bij geen ontheffing zal toch gesloopt moeten worden na 1 dec 2026.',
+    note: 'Kostbaar maatschappelijk kapitaal'
   },
   {
     id: 'saneringsdeadline-dec-2026',

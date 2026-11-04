@@ -185,7 +185,7 @@ export const SaneringTimeline: React.FC<SaneringTimelineProps> = ({ onOpenContac
                   : 'bg-[#F7F8F6] text-[#1F2928]/70 hover:bg-[#E9E4D8] hover:text-[#1F2928]'
               }`}
             >
-              2025: Visievorming (4)
+              2025: Visievorming (2)
             </button>
             <button
               onClick={() => setActiveFilter('2026')}
@@ -195,7 +195,7 @@ export const SaneringTimeline: React.FC<SaneringTimelineProps> = ({ onOpenContac
                   : 'bg-[#F7F8F6] text-[#1F2928]/70 hover:bg-[#E9E4D8] hover:text-[#1F2928]'
               }`}
             >
-              2026: Bestuurlijk proces (7)
+              2026: Bestuurlijk proces (9)
             </button>
             <button
               onClick={() => setActiveFilter('sanering')}
