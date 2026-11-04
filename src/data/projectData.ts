@@ -276,7 +276,7 @@ export const STATUS_STEPS: StatusStep[] = [
     statusText: 'In ontwikkeling / overleg',
     state: 'in_progress',
     explanation:
-      'Actieve fase waarin het ontwikkelperspectief sinds begin 2026 is gedeeld met zowel de ambtelijke als bestuurlijke lagen binnen de Gemeente en Provincie, (in)direct ook als belanghebbenden. Waarvan sinds april 2026 aanvraag voor tijdelijke ontheffing voor ontwerpend onderzoek.'
+      'Actieve fase waarin het ontwikkelperspectief sinds begin 2026 is gedeeld met zowel de ambtelijke als bestuurlijke lagen binnen de Gemeente, (in)direct Provincie ook als belanghebbenden. Dit geldt ook voor aanvraag voor tijdelijke ontheffing voor ontwerpend onderzoek.'
   },
   {
     step: 3,

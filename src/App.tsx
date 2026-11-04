@@ -4,11 +4,11 @@ import { Hero } from './components/Hero';
 import { LocationSection } from './components/LocationSection';
 import { WhyNetConscious } from './components/WhyNetConscious';
 import { TimelineSection } from './components/TimelineSection';
-import { ProofOfConceptSection } from './components/ProofOfConceptSection';
 import { StakeholdersSection } from './components/StakeholdersSection';
 import { ProjectStatusSection } from './components/ProjectStatusSection';
 import { FuturePerspective } from './components/FuturePerspective';
 import { NewsSection } from './components/NewsSection';
+import { SaneringTimeline } from './components/SaneringTimeline';
 import { FaqSection } from './components/FaqSection';
 import { Footer } from './components/Footer';
 import { StatusModal } from './components/StatusModal';
@@ -46,11 +46,11 @@ export default function App() {
         {/* 6. Toekomstperspectief (Van energielocatie naar een nieuwe leefomgeving) */}
         <FuturePerspective />
 
-        {/* 7. De Locatie als Proeftuin (Proof of Concept: Behouden, Onderzoeken, Opschalen) */}
-        <ProofOfConceptSection />
-
-        {/* 8. Actuele Fotoreportage Sanering Windmolen (5 Stappen) */}
+        {/* 7. Actuele Fotoreportage Sanering Windmolen (5 Stappen) */}
         <NewsSection onOpenContact={handleOpenContact} />
+
+        {/* 8b. Proces- & Saneringstijdlijn (2025 – dec 2026) */}
+        <SaneringTimeline onOpenContact={handleOpenContact} />
 
         {/* 9. Samenwerking (Netwerk rond Ossenkampweg 12) */}
         <StakeholdersSection onOpenContact={handleOpenContact} />

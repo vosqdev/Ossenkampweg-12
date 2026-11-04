@@ -291,14 +291,25 @@ export const NewsSection: React.FC<NewsSectionProps> = ({ onOpenContact }) => {
               </div>
             </div>
 
-            {onOpenContact && (
-              <button
-                onClick={onOpenContact}
-                className="shrink-0 text-xs font-semibold text-[#509799] hover:text-[#1F2928] underline underline-offset-4 cursor-pointer"
+            <div className="flex flex-wrap items-center gap-3">
+              <a
+                href="#sanering-proces"
+                className="shrink-0 text-xs font-semibold text-[#1F2928] hover:text-[#509799] underline underline-offset-4 cursor-pointer"
               >
-                Vragen over de sanering?
-              </button>
-            )}
+                Bekijk proces- & saneringstijdlijn ↓
+              </a>
+              {onOpenContact && (
+                <>
+                  <span className="text-[#1F2928]/30 hidden sm:inline">·</span>
+                  <button
+                    onClick={onOpenContact}
+                    className="shrink-0 text-xs font-semibold text-[#509799] hover:text-[#1F2928] underline underline-offset-4 cursor-pointer"
+                  >
+                    Vragen over de sanering?
+                  </button>
+                </>
+              )}
+            </div>
           </div>
         </div>
       </div>

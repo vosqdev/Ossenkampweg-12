@@ -28,7 +28,7 @@ export const ProjectStatusSection: React.FC = () => {
               Formele Toelichting & Project Status
             </h3>
             <p className="text-xs sm:text-sm text-[#1F2928]/80 mt-1 leading-relaxed">
-              De gemeente Zeewolde, provincie Flevoland en netbeheerder Liander hebben <strong>geen definitief besluit</strong> genomen over dit initiatief. Het ontwikkelperspectief is sinds begin 2026 gedeeld met zowel ambtelijke als bestuurlijke lagen en belanghebbenden; sinds april 2026 loopt er een aanvraag voor een tijdelijke ontheffing ten behoeve van ontwerpend onderzoek.
+              De gemeente Zeewolde, provincie Flevoland en netbeheerder Liander hebben <strong>geen definitief besluit</strong> genomen over dit initiatief. Het ontwikkelperspectief is sinds begin 2026 gedeeld met zowel ambtelijke als bestuurlijke lagen binnen de Gemeente, (in)direct Provincie ook als belanghebbenden. Dit geldt ook voor de aanvraag voor een tijdelijke ontheffing voor ontwerpend onderzoek.
             </p>
           </div>
         </div>

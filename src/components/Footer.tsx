@@ -63,13 +63,13 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact, onOpenStatus }) =
                 </a>
               </li>
               <li>
-                <a href="#proeftuin" className="hover:text-[#63B9BB] transition-colors">
-                  Proeftuin Zeewolde
+                <a href="#nieuws" className="hover:text-[#63B9BB] transition-colors">
+                  Sanering & Fotoreportage
                 </a>
               </li>
               <li>
-                <a href="#nieuws" className="hover:text-[#63B9BB] transition-colors">
-                  Sanering & Fotoreportage
+                <a href="#sanering-proces" className="hover:text-[#63B9BB] transition-colors">
+                  Proces- & Saneringstijdlijn
                 </a>
               </li>
               <li>

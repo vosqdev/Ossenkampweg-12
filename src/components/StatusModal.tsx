@@ -36,7 +36,7 @@ export const StatusModal: React.FC<StatusModalProps> = ({ isOpen, onClose }) => 
             Waar staat het initiatief nu?
           </h3>
           <p className="mt-2 text-sm text-[#1F2928]/75 leading-relaxed">
-            De website mag niet de indruk wekken dat sprake is van een reeds vergund, definitief of bestuurlijk goedgekeurd project. Het betreft een ontwikkelperspectief dat sinds begin 2026 actief is gedeeld met Gemeente en Provincie (ambtelijk en bestuurlijk), waarbij sinds april 2026 een aanvraag loopt voor een tijdelijke ontheffing ten behoeve van ontwerpend onderzoek.
+            De website mag niet de indruk wekken dat sprake is van een reeds vergund, definitief of bestuurlijk goedgekeurd project. Het betreft een ontwikkelperspectief dat sinds begin 2026 actief is gedeeld met zowel ambtelijke als bestuurlijke lagen binnen de Gemeente, (in)direct Provincie ook als belanghebbenden. Dit geldt ook voor de aanvraag voor een tijdelijke ontheffing voor ontwerpend onderzoek.
           </p>
         </div>
 
