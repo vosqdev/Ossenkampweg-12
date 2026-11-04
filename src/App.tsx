@@ -43,7 +43,7 @@ export default function App() {
         {/* 5. Ontwikkelperspectief / Tijdlijn (2025–2035+) */}
         <TimelineSection />
 
-        {/* 6. Toekomstperspectief & Simulatie (Van energielocatie naar energiesysteem) */}
+        {/* 6. Toekomstperspectief (Van energielocatie naar een nieuwe leefomgeving) */}
         <FuturePerspective />
 
         {/* 7. De Locatie als Proeftuin (Proof of Concept: Behouden, Onderzoeken, Opschalen) */}
